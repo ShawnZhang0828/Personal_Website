@@ -1,0 +1,49 @@
+#info-container {
+    display: flex;
+    justify-content: center;
+    transition: 600ms;
+    padding-top: 5%;
+
+    img {
+        height: 16rem;
+        border-radius: 50%;
+        float: left;
+        padding-right: 3rem;
+        padding-left: 3rem;
+        margin-top: 3rem;
+        transition: 400ms;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+    }
+
+    #seperator {
+        border: 1px solid black;
+        float: left;
+        margin-top: 5rem;
+        padding-top: 12rem;
+    }
+
+    #greeting-name {
+        padding-top: 8rem;
+        padding-left: 3rem;
+        float: left;
+
+        p {
+            font-size: 1.3rem;
+        }
+
+        h1 {
+            font-size: 3.2em;
+        }
+    }
+
+}
+
+#info-container.active {
+    display: flex;
+    justify-content: center;
+    padding-left: 250px;
+    transition: 400ms;
+}

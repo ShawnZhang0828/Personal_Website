@@ -1,0 +1,33 @@
+#project-title {
+    padding-top: 4rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#project-container {
+    margin-left: 10%;
+    margin-right: 10%;
+
+    ul {
+        display: flex;
+        text-align: center;
+    }
+
+    ul li {
+        display: inline-block;
+        margin: 2rem;    
+        border-radius: 2rem;
+
+        img {
+            height: 16rem;
+            width: 12rem;
+        }
+    }
+}
+
+#project-container.active {
+    padding-left: 250px;
+    transition: 400ms;
+}

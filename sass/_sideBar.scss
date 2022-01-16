@@ -1,0 +1,125 @@
+#navbar {
+    background-color: #333B3B;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: fixed;
+
+    #other-nav {
+        padding-left: 60%;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+
+        li {
+            color: #f5f5f5;
+            display: inline-block;
+            padding-right: 4em;
+            // margin-left: 1rem;
+            font-weight: bold;
+            transition: 400ms;
+
+            a:visited {
+                color: #f5f5f5;
+            }
+        }
+
+        li:hover {
+            transform: scale(1.2);
+        }
+
+    }
+    
+}
+
+.menu-bars{
+    margin-left: 2rem;
+    font-size: 2rem;
+    color: #FFF;
+    transition: 400ms;
+}
+
+.menu-bars:hover {
+    transform: scale(1.2);
+}
+
+#nav-menu {
+    background-color: #181B1B;
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 850ms;
+}
+
+#nav-menu.active {
+    left: 0;
+    transition: 600ms;
+}
+
+.nav-text {
+    display: flex;
+    justify-content: start;
+    list-style: none;
+    height: 50px;
+    padding: 1rem;
+}
+
+.nav-text a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+.nav-text:hover {
+    background-color: rgba(144, 144, 144, 0.219);
+    cursor: pointer;
+}
+
+.nav-menu-items {
+    width: 100%;
+}
+
+.nav-icon {
+    padding-right: 1rem;
+    color: #909090;
+}
+
+#navbar-toggle {
+    background-color: #212121;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.logo a{
+    padding-left: 1rem;
+    color: #fff;
+}
+
+#nav-toggle a {
+    text-decoration: none;
+}
+
+.nav-section {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    i {
+        padding-left: -3rem;
+        width: 4.5rem;
+        text-align: center;
+    }
+}
+
+

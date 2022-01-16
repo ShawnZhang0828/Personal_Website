@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/style.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="js/main.js" type="module"></script>
+    <title>Document</title>
+</head>
+<body> 
+    <header>
+        <nav>
+            <div id="navbar">
+                <a href="#" class="menu-bars" id="show-menu">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <ul id="other-nav">
+                    <li class="current">Home</li>
+                    <li>
+                        <a href="https://zhanx326.wixsite.com/1p13portfolio" target="_blank" style="text-decoration: none;">1P13 Project Page</a>
+                    </li>
+                    <li>
+                        <a href="#down" style="text-decoration: none;">Contact</a>
+                    </li>
+                </ul> 
+            </div>
+            <nav id="nav-menu">
+                <ul class="nav-menu-items">
+                    <div id="navbar-toggle">
+                        <a href='#' class="menu-bars" id="hide-menu">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                        <h2 class="logo">
+                            <a href="https://zhanx326.wixsite.com/1p13portfolio"  target="_blank" style="text-decoration: none;">Xiang Zhang</a>
+                        </h2>
+                    </div>
+                    <div class="nav-section">
+                        <li class="nav-text"><a href="#"><i class="fas fa-info"></i>About</a></li>
+                        <li class="nav-text"><a href="#"><i class="fab fa-python"></i>Skills</a></li>
+                        <li class="nav-text"><a href="#"><i class="fas fa-project-diagram"></i>Projects</a></li>
+                        <li class="nav-text"><a href="#"><i class="far fa-address-card"></i>Resume</a></li>
+                        <li class="nav-text"><a href="#"><i class="fas fa-phone-square"></i>Contact</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </nav>
+    </header>
+
+    <div class="container" id="info-container">
+        <div id="personal-info">
+            <img src="Face_Shot_Updated.jpg" id="face-photo" alt="Potrait">
+            <div id="seperator"></div>
+            <div id="greeting-name">
+                <p>Hi! I'm</p>
+                <h1>Xiang Zhang</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="intro-container">
+        <article id="self-intro">
+            <h2>About me</h2>
+            <p>
+                Welcome to my personal website! I'm a second year Software Engineering student in McMaster University. I have experience in 
+                coding with Python, Java, C, HTML/CSS, and Javascript (Scroll down to find out more!).
+            </p>
+            <p>
+                Apart from coding and schoolwork, I love basketball, swimming, and playing guitar.
+            </p> 
+            <p>
+                Thanks for stopping by! And always feel free to get in touch : )
+            </p>
+        </article>
+    </div>
+
+    <div class="container" id="project-container">
+        <h2 id="project-title">Projects</h2>
+        <ul id="project-list">
+            <li>
+                <div class="project">
+                    <h3>To-Do List Manager</h3>
+                    <img class="proj-img" src="data/project_img/ToDo_screenshot.png" alt="To-Do List Manager Read Screen">
+                    <p> A To-Do List Manager built with TkInter in Python. It supports various functionalities like categorizing tasks, 
+                        filtering tasks when viewing, and other regular operations on tasks.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="project">
+                    <h3>2048</h3>
+                    <img class="proj-img" src="data/project_img/2048_screenshot.png" alt="2048 Game Screen">
+                    <p>
+                        A re-made version of 2048. Players can store their record locally, and read the record later on.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="project">
+                    <h3>Course Selection Helper</h3>
+                    <img class="proj-img" src="data/project_img/course_selection_screenshot.png" alt="Selection Result Screen">
+                    <p>
+                        A program helps university students to select courses. Students enter the courses they are required to take, 
+                        and the program gives every feasible schedules.
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>
