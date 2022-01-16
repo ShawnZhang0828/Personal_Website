@@ -11,19 +11,22 @@
     <title>Document</title>
 </head>
 <body> 
-    <header>
+
+    <header name="top">
         <nav>
             <div id="navbar">
                 <a href="#" class="menu-bars" id="show-menu">
                     <i class="fas fa-bars"></i>
                 </a>
                 <ul id="other-nav">
-                    <li class="current">Home</li>
+                    <li class="current" id="back-to-top">
+                        <a href="#top" style="text-decoration: none;">Home</button>
+                    </li>
                     <li>
                         <a href="https://zhanx326.wixsite.com/1p13portfolio" target="_blank" style="text-decoration: none;">1P13 Project Page</a>
                     </li>
                     <li>
-                        <a href="#down" style="text-decoration: none;">Contact</a>
+                        <a href="#contact-container" style="text-decoration: none;">Contact</a>
                     </li>
                 </ul> 
             </div>
@@ -129,6 +132,9 @@
             <a href="https://discordapp.com/users/574394079543033876/"><i class="fab fa-discord"></i></a>
         </ul>
     </div>
+
+    <canvas id="canvas1"></canvas>
+    <script src="js/bg_script.js"></script>
 
 </body>
 </html>
