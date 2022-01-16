@@ -20,7 +20,7 @@
     }
 
     #seperator {
-        border: 1px solid black;
+        border: 1px solid $font-black;
         float: left;
         margin-top: 5rem;
         padding-top: 12rem;
@@ -30,6 +30,7 @@
         padding-top: 8rem;
         padding-left: 3rem;
         float: left;
+        color: $font-black;
 
         p {
             font-size: 1.3rem;

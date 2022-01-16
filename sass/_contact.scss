@@ -2,13 +2,13 @@
     padding-top: 4rem;
     padding-bottom: 4rem;
     text-align: center;
-    color: black;
+    color: $font-black;
     margin-left: 30%;
     margin-right: 30%;
     font-size: 1.2rem;
 
     #email-text, #email-link {
-        color: black;
+        color: $font-black;
         display: inline-block;
         font-size: 1.2rem;
         margin-bottom: 1em;
@@ -29,12 +29,12 @@
     }
 
     a:visited {
-        color: black;
+        color: $font-black;
     }
 
     #other-contacts {
         a {
-            color: black;
+            color: $font-black;
             font-size: 1.5rem;
             text-decoration: none;
             display: flex;
