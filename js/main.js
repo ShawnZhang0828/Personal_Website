@@ -5,6 +5,7 @@ const openMenuProject = document.querySelector("#project-container");
 const openMenuResume = document.querySelector("#resume-container");
 const openMenunContact = document.querySelector("#contact-container");
 const openMenuCanvas = document.querySelector("#canvas1");
+const openMenuSkill = document.querySelector("#skillset-container");
 const hideMenuIcon = document.querySelector("#hide-menu");
 const sideMenu = document.querySelector("#nav-menu");
 
@@ -16,6 +17,7 @@ openMenu.addEventListener("click", function() {
     openMenuResume.classList.add("active")
     openMenunContact.classList.add("active")
     openMenuCanvas.classList.add("active");
+    openMenuSkill.classList.add("active");
 })
 
 hideMenuIcon.addEventListener("click", function() {
@@ -26,10 +28,5 @@ hideMenuIcon.addEventListener("click", function() {
     openMenuResume.classList.remove("active")
     openMenunContact.classList.remove("active")
     openMenuCanvas.classList.remove("active");
+    openMenuSkill.classList.remove("active");
 })
-
-// Home button
-function topFunction() {
-    // document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  }

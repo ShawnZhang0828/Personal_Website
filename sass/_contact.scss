@@ -8,8 +8,8 @@
     font-size: 1.2rem;
 
     #email-text, #email-link {
+        color: black;
         display: inline-block;
-        text-decoration: none;
         font-size: 1.2rem;
         margin-bottom: 1em;
     }
@@ -34,6 +34,7 @@
 
     #other-contacts {
         a {
+            color: black;
             font-size: 1.5rem;
             text-decoration: none;
             display: flex;

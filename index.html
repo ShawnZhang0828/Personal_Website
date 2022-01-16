@@ -12,7 +12,7 @@
 </head>
 <body> 
 
-    <header name="top">
+    <header>
         <nav>
             <div id="navbar">
                 <a href="#" class="menu-bars" id="show-menu">
@@ -20,7 +20,7 @@
                 </a>
                 <ul id="other-nav">
                     <li class="current" id="back-to-top">
-                        <a href="#top" style="text-decoration: none;">Home</button>
+                        <a href="#info-container" style="text-decoration: none;">Home</button>
                     </li>
                     <li>
                         <a href="https://zhanx326.wixsite.com/1p13portfolio" target="_blank" style="text-decoration: none;">1P13 Project Page</a>
@@ -42,7 +42,7 @@
                     </div>
                     <div class="nav-section">
                         <button class="nav-text"  onclick="document.getElementById('info-container').scrollIntoView({behavior: 'smooth'});"><i class="fas fa-info"></i>About</button>
-                        <button class="nav-text"  onclick="document.getElementById('info-container').scrollIntoView({behavior: 'smooth'});"><i class="fab fa-python"></i>Skills</button>
+                        <button class="nav-text"  onclick="document.getElementById('skillset-container').scrollIntoView({behavior: 'smooth'});"><i class="fab fa-python"></i>Skills</button>
                         <button class="nav-text"  onclick="document.getElementById('project-container').scrollIntoView({behavior: 'smooth'});"><i class="fas fa-project-diagram"></i>Projects</button>
                         <button class="nav-text"  onclick="document.getElementById('resume-container').scrollIntoView({behavior: 'smooth'});"><i class="far fa-address-card"></i>Resume</button>
                         <button class="nav-text"  onclick="document.getElementById('contact-container').scrollIntoView({behavior: 'smooth'});"><i class="fas fa-phone-square"></i>Contact</button>
@@ -78,6 +78,47 @@
                 Thanks for stopping by! And always feel free to get in touch : )
             </p>
         </article>
+    </div>
+
+    <div class="container" id="skillset-container">
+        <h2 id="skill-title">Skills</h2>
+        <ul>
+            <div class="skill-container">
+                <span class="skill-text">Python</span>
+                <span class="skill-percentage">80%</span>
+                <span class="skill-bar python"></span>
+            </div>
+
+            <div class="skill-container">
+                <span class="skill-text">Java</span>
+                <span class="skill-percentage">60%</span>
+                <span class="skill-bar java"></span>
+            </div>
+
+            <div class="skill-container">
+                <span class="skill-text">C</span>
+                <span class="skill-percentage">55%</span>
+                <span class="skill-bar c"></span>
+            </div>
+
+            <div class="skill-container">
+                <span class="skill-text">JavaScript</span>
+                <span class="skill-percentage">55%</span>
+                <span class="skill-bar js"></span>
+            </div>
+
+            <div class="skill-container">
+                <span class="skill-text">HTML/CSS</span>
+                <span class="skill-percentage">50%</span>
+                <span class="skill-bar html"></span>
+            </div>
+
+            <div class="skill-container">
+                <span class="skill-text">Matlab</span>
+                <span class="skill-percentage">40%</span>
+                <span class="skill-bar html"></span>
+            </div>
+        </ul>
     </div>
 
     <div class="container" id="project-container">
