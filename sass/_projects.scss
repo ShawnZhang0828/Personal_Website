@@ -12,17 +12,33 @@
 
     ul {
         display: flex;
-        text-align: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     ul li {
-        display: inline-block;
+        display: flex;
+        // justify-content: center;
         margin: 2rem;    
-        border-radius: 2rem;
+        text-decoration: none;
+        text-align: center;
 
         img {
+            border-radius: 1rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
             height: 16rem;
             width: 12rem;
+            transition: 400ms;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        p {
+            max-width: 30ch;
         }
     }
 }

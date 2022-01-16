@@ -38,13 +38,14 @@
                         </h2>
                     </div>
                     <div class="nav-section">
-                        <li class="nav-text"><a href="#"><i class="fas fa-info"></i>About</a></li>
-                        <li class="nav-text"><a href="#"><i class="fab fa-python"></i>Skills</a></li>
-                        <li class="nav-text"><a href="#"><i class="fas fa-project-diagram"></i>Projects</a></li>
-                        <li class="nav-text"><a href="#"><i class="far fa-address-card"></i>Resume</a></li>
-                        <li class="nav-text"><a href="#"><i class="fas fa-phone-square"></i>Contact</a></li>
+                        <button class="nav-text"  onclick="document.getElementById('info-container').scrollIntoView({behavior: 'smooth'});"><i class="fas fa-info"></i>About</button>
+                        <button class="nav-text"  onclick="document.getElementById('info-container').scrollIntoView({behavior: 'smooth'});"><i class="fab fa-python"></i>Skills</button>
+                        <button class="nav-text"  onclick="document.getElementById('project-container').scrollIntoView({behavior: 'smooth'});"><i class="fas fa-project-diagram"></i>Projects</button>
+                        <button class="nav-text"  onclick="document.getElementById('resume-container').scrollIntoView({behavior: 'smooth'});"><i class="far fa-address-card"></i>Resume</button>
+                        <button class="nav-text"  onclick="document.getElementById('contact-container').scrollIntoView({behavior: 'smooth'});"><i class="fas fa-phone-square"></i>Contact</button>
                     </div>
                 </ul>
+                <img src="data/decoration_img/smiling_transparent_robot.gif">
             </nav>
         </nav>
     </header>
@@ -107,6 +108,25 @@
                     </p>
                 </div>
             </li>
+        </ul>
+    </div>
+
+    <div class="container" id="resume-container">
+        <h2>Resume</h2>
+        <a href="https://docs.google.com/document/d/1YnFWrVodrDx1DZ3_OJ3nAh_Tv73aUdlIcm0Xkw6_bdw/edit?usp=sharing" 
+        target="_blank" style="text-decoration: none;"><img src="data/resume_img/Xiang_Zhang_Resume.jpg" alt="resume image"></a>
+    </div>
+
+    <div class="container" id="contact-container">
+        <h2>Get in Touch</h2>
+        <p id="email-text">Email: </p>
+        <a HREF="mailto:xiang.zhang0828@gmail.com?subject=&body=" id="email-link">xiang.zhang0828@gmail.com</a>
+        <p>or via one of the following</p>
+        <ul id="other-contacts">
+            <a href="https://github.com/ShawnZhang0828"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/xiang-zhang-9988b61b8/"><i class="fab fa-linkedin"></i></a>
+            <a href="instagram.com/amujueee_/"><i class="fab fa-instagram"></i></a>
+            <a href="https://discordapp.com/users/574394079543033876/"><i class="fab fa-discord"></i></a>
         </ul>
     </div>
 

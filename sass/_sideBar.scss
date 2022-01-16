@@ -49,12 +49,19 @@
     background-color: #181B1B;
     width: 250px;
     height: 100vh;
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
     position: fixed;
     top: 0;
     left: -100%;
     transition: 850ms;
+
+    img {
+        width: 40%;
+        height: 20%;
+        margin-left: 24%;
+        margin-top: 15%;
+    }
 }
 
 #nav-menu.active {
@@ -68,13 +75,10 @@
     list-style: none;
     height: 50px;
     padding: 1rem;
-}
-
-.nav-text a {
-    text-decoration: none;
+    background-color: #181B1B;
+    border: none;
     color: #f5f5f5;
-    font-size: 1.2rem;
-    margin-left: 1rem;
+    font-size: 1.1em;
 }
 
 .nav-text:hover {

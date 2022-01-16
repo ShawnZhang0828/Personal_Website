@@ -1,0 +1,23 @@
+#resume-container {
+    padding-top: 4rem;
+    text-align: center;
+    font-size: 2rem;
+
+    img {
+        margin-top: 1rem;
+        height: 23em;
+        width: 16.1em;
+        border-radius: 1rem;
+        border: 1px solid black;
+        transition: 400ms;
+    }
+
+    img:hover {
+        transform: scale(1.02);
+    }
+}
+
+#resume-container.active {
+    padding-left: 250px;
+    transition: 400ms;
+}
