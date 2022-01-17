@@ -76,7 +76,7 @@ class Particle {
 // create particle array
 const init = () => {
     particlesArray = [];
-    let numberOfparticles = (canvas.height * canvas.width) / 12000;
+    let numberOfparticles = (canvas.height * canvas.width) / 9000;
     for (let i = 0; i < numberOfparticles; i++) {
         let size = (Math.random() * 4) + 1.5;
         let x = (Math.random() * ((innerWidth - size * 2) - (size * 2)) + size * 2);
@@ -130,6 +130,24 @@ window.addEventListener("resize", (event) => {
 window.addEventListener("mouseout", (event) => {
     mouse.x = undefined;
     mouse.y = undefined;
+})
+
+const openMenu = document.querySelector("#show-menu");
+const hideMenuIcon = document.querySelector("#hide-menu");
+const sideMenu = document.querySelector("#nav-menu");
+
+// openMenu.addEventListener("click", (event) => {
+//     canvas.width = innerWidth;
+//     canvas.height = innerHeight;
+//     mouse.radius = (canvas.heigh/80) * (canvas.height/80);
+//     init();
+// })
+
+hideMenuIcon.addEventListener("click", (event) => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    mouse.radius = (canvas.heigh/80) * (canvas.height/80);
+    init();
 })
 
 init();

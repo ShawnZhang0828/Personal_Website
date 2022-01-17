@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dist/css/style.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <script src="js/main.js" type="module"></script>
     <title>Xiang Zhang</title>
@@ -20,7 +19,7 @@
                 </a>
                 <ul id="other-nav">
                     <li class="current" id="back-to-top">
-                        <a href="#info-container" style="text-decoration: none;">Home</button>
+                        <a href="#info-container" style="text-decoration: none;">Home</a>
                     </li>
                     <li>
                         <a href="https://zhanx326.wixsite.com/1p13portfolio" target="_blank" style="text-decoration: none;">1P13 Project Page</a>
@@ -33,22 +32,51 @@
             <nav id="nav-menu">
                 <ul class="nav-menu-items">
                     <div id="navbar-toggle">
-                        <a href='#' class="menu-bars" id="hide-menu">
-                            <i class="fas fa-bars"></i>
-                        </a>
-                        <h2 class="logo">
-                            <a href="https://xiangzhang2001.netlify.app"  target="_blank" style="text-decoration: none;">Xiang Zhang</a>
-                        </h2>
+                        <span>
+                            <a href='#' class="menu-bars" id="hide-menu">
+                                <i class="fas fa-bars"></i>
+                            </a>
+                        </span>
+                        <span>
+                            <h2 class="logo">
+                                <a href="https://xiangzhang2001.netlify.app"  target="_blank" style="text-decoration: none;" id="nav-name">Xiang Zhang</a>
+                            </h2>
+                        </span>
                     </div>
                     <div class="nav-section">
-                        <button class="nav-text"  onclick="document.getElementById('info-container').scrollIntoView({behavior: 'smooth'});"><i class="fas fa-info"></i>About</button>
-                        <button class="nav-text"  onclick="document.getElementById('skillset-container').scrollIntoView({behavior: 'smooth'});"><i class="fab fa-python"></i>Skills</button>
-                        <button class="nav-text"  onclick="document.getElementById('project-container').scrollIntoView({behavior: 'smooth'});"><i class="fas fa-project-diagram"></i>Projects</button>
-                        <button class="nav-text"  onclick="document.getElementById('resume-container').scrollIntoView({behavior: 'smooth'});"><i class="far fa-address-card"></i>Resume</button>
-                        <button class="nav-text"  onclick="document.getElementById('contact-container').scrollIntoView({behavior: 'smooth'});"><i class="fas fa-phone-square"></i>Contact</button>
+                        <button class="nav-text"  onclick="document.getElementById('info-container').scrollIntoView({behavior: 'smooth'});">
+                            <div>
+                                <i class="fas fa-info fa-sm"></i>
+                                <p>About</p>
+                            </div>
+                        </button>
+                        <button class="nav-text"  onclick="document.getElementById('skillset-container').scrollIntoView({behavior: 'smooth'});">
+                            <div>
+                                <i class="fab fa-python fa-sm"></i>
+                                <p>Skills</p>
+                            </div>    
+                        </button>
+                        <button class="nav-text"  onclick="document.getElementById('project-container').scrollIntoView({behavior: 'smooth'});">
+                            <div>
+                                <i class="fas fa-project-diagram fa-sm"></i>
+                                <p>Projects</p>
+                            </div>
+                        </button>
+                        <button class="nav-text"  onclick="document.getElementById('resume-container').scrollIntoView({behavior: 'smooth'});">
+                            <div>
+                                <i class="far fa-address-card fa-sm"></i>
+                                <p>Resume</p>
+                            </div>
+                        </button>
+                        <button class="nav-text"  onclick="document.getElementById('contact-container').scrollIntoView({behavior: 'smooth'});">
+                            <div>
+                                <i class="fas fa-phone-square fa-sm"></i>
+                                <p>Contact</p>
+                            </div>
+                        </button>
                     </div>
+                    <img src="data/decoration_img/smiling_transparent_robot.gif">
                 </ul>
-                <img src="data/decoration_img/smiling_transparent_robot.gif">
             </nav>
         </nav>
     </header>
@@ -91,13 +119,13 @@
 
             <div class="skill-container">
                 <span class="skill-text">Java</span>
-                <span class="skill-percentage">60%</span>
+                <span class="skill-percentage">65%</span>
                 <span class="skill-bar java"></span>
             </div>
 
             <div class="skill-container">
                 <span class="skill-text">C</span>
-                <span class="skill-percentage">55%</span>
+                <span class="skill-percentage">60%</span>
                 <span class="skill-bar c"></span>
             </div>
 
@@ -109,13 +137,13 @@
 
             <div class="skill-container">
                 <span class="skill-text">HTML/CSS</span>
-                <span class="skill-percentage">50%</span>
+                <span class="skill-percentage">55%</span>
                 <span class="skill-bar html"></span>
             </div>
 
             <div class="skill-container">
                 <span class="skill-text">Matlab</span>
-                <span class="skill-percentage">40%</span>
+                <span class="skill-percentage">50%</span>
                 <span class="skill-bar html"></span>
             </div>
         </ul>
