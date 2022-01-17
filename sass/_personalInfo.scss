@@ -1,17 +1,18 @@
 #info-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     transition: 600ms;
     padding-top: 5%;
     z-index: 10;
 
     img {
-        height: 16rem;
+        height: calc(100px + 10vw);
         border-radius: 50%;
         float: left;
-        padding-right: 3rem;
-        padding-left: 3rem;
-        margin-top: 3rem;
+        // padding-right: calc(20px + 2vw);
+        // padding-left: 2vw;
+        margin-top: 9vh;
         transition: 400ms;
     }
 
@@ -22,22 +23,23 @@
     #seperator {
         border: 1px solid $font-black;
         float: left;
-        margin-top: 5rem;
-        padding-top: 12rem;
+        margin-left: calc(20px + 2vw);
+        margin-right: calc(20px + 2vw);
+        margin-top: calc(45px + 4vh);
+        padding-top: calc(100px + 10vw);
     }
 
     #greeting-name {
         padding-top: 8rem;
-        padding-left: 3rem;
         float: left;
         color: $font-black;
 
         p {
-            font-size: 1.3rem;
+            font-size: calc(15px + 1vw);
         }
 
         h1 {
-            font-size: 3.2em;
+            font-size: calc(15px + 3vw);
         }
     }
 
@@ -46,6 +48,53 @@
 #info-container.active {
     display: flex;
     justify-content: center;
-    padding-left: 250px;
+    padding-left: calc(70px + 10vw);
     transition: 400ms;
+}
+
+#info-container.shrink {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: 600ms;
+    padding-top: 5%;
+    z-index: 10;
+
+    img {
+        display: inline-block;
+        margin-left: 50%;
+        height: calc(100px + 10vw);
+        border-radius: 50%;
+        // padding-right: calc(20px + 2vw);
+        // padding-left: 2vw;
+        margin-top: 9vh;
+        transition: 400ms;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+    }
+
+    hr {
+        border-top: 2px solid $font-black;
+        margin-top: 30vh;
+        margin-left: calc(50px + 35vw);
+        margin-right: calc(50px);
+        justify-content: center;
+    }
+
+    #greeting-name {
+        padding-top: 3vh;
+        margin-left: calc(100px + 20vw);
+        color: $font-black;
+        text-align: center;
+
+        p {
+            font-size: calc(15px + 1vw);
+        }
+
+        h1 {
+            font-size: calc(15px + 3vw);
+        }
+    }
 }

@@ -1,17 +1,25 @@
 #contact-container {
+    width: 60vw;
     padding-top: 4rem;
     padding-bottom: 4rem;
     text-align: center;
     color: $font-black;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 20vw;
+    margin-right: 20vw;
     font-size: 1.2rem;
 
     #email-text, #email-link {
+        justify-content: center;
         color: $font-black;
         display: inline-block;
         font-size: 1.2rem;
         margin-bottom: 1em;
+    }
+
+    #email-link {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     h2 {
@@ -34,13 +42,15 @@
 
     #other-contacts {
         a {
+            max-width: 5px;
+            height: auto;
             color: $font-black;
             font-size: 1.5rem;
             text-decoration: none;
             display: flex;
             margin: 2rem;    
             text-decoration: none;
-            text-align: center;
+            justify-content: center;
             transition: 400ms;
         }
 
@@ -51,6 +61,6 @@
 }
 
 #contact-container.active {
-    padding-left: 250px;
+    padding-left: calc(70px + 10vw);
     transition: 400ms;
 }

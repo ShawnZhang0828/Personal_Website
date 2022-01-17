@@ -75,6 +75,7 @@ class Particle {
 
 // create particle array
 const init = () => {
+    console.log("initializing...")
     particlesArray = [];
     let numberOfparticles = (canvas.height * canvas.width) / 9000;
     for (let i = 0; i < numberOfparticles; i++) {
@@ -143,12 +144,12 @@ const sideMenu = document.querySelector("#nav-menu");
 //     init();
 // })
 
-hideMenuIcon.addEventListener("click", (event) => {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-    mouse.radius = (canvas.heigh/80) * (canvas.height/80);
-    init();
-})
+// hideMenuIcon.addEventListener("click", (event) => {
+//     canvas.width = innerWidth;
+//     canvas.height = innerHeight;
+//     mouse.radius = (canvas.heigh/80) * (canvas.height/80);
+//     init();
+// })
 
 init();
 animate();

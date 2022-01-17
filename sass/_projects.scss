@@ -45,6 +45,6 @@
 }
 
 #project-container.active {
-    padding-left: 250px;
+    padding-left: calc(70px + 10vw);
     transition: 400ms;
 }
