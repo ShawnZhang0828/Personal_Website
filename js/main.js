@@ -1,6 +1,3 @@
-const canvas = document.getElementById("canvas1");
-const width = canvas.width;
-
 const openMenu = document.querySelector("#show-menu");
 const openMenuPersonalInfo = document.querySelector("#info-container");
 const openMenuPersonalIntro = document.querySelector("#self-intro");
@@ -13,6 +10,9 @@ const hideMenuIcon = document.querySelector("#hide-menu");
 const sideMenu = document.querySelector("#nav-menu");
 
 openMenu.addEventListener("click", function() {
+    const canvas = document.getElementById("canvas1");
+    const width = canvas.width;
+    
     sideMenu.classList.add("active")
     console.log(width);
     if (width < 400) {        
@@ -36,6 +36,9 @@ openMenu.addEventListener("click", function() {
 })
 
 hideMenuIcon.addEventListener("click", function() {
+    const canvas = document.getElementById("canvas1");
+    const width = canvas.width;
+    
     sideMenu.classList.remove("active")
     if (width < 400) {
         var new_seperator = document.getElementById("new_seperator");
