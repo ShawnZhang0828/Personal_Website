@@ -6,15 +6,14 @@ const openMenuResume = document.querySelector("#resume-container");
 const openMenunContact = document.querySelector("#contact-container");
 const openMenuCanvas = document.querySelector("#canvas1");
 const openMenuSkill = document.querySelector("#skillset-container");
-const hideMenuIcon = document.querySelector("#hide-menu");
 const sideMenu = document.querySelector("#nav-menu");
+const pageContent = document.querySelector("body");
 
-openMenu.addEventListener("click", function() {
+const showSidebar = () => {
     const canvas = document.getElementById("canvas1");
     const width = canvas.width;
     
     sideMenu.classList.add("active")
-    console.log(width);
     if (width < 400) {        
         var old_seperator = document.getElementById("seperator");
         old_seperator.remove();
@@ -33,9 +32,9 @@ openMenu.addEventListener("click", function() {
     openMenunContact.classList.add("active");
     openMenuCanvas.classList.add("active");
     openMenuSkill.classList.add("active");
-})
+}
 
-hideMenuIcon.addEventListener("click", function() {
+const hideSidebar = () => {
     const canvas = document.getElementById("canvas1");
     const width = canvas.width;
     
@@ -58,4 +57,18 @@ hideMenuIcon.addEventListener("click", function() {
     openMenunContact.classList.remove("active")
     openMenuCanvas.classList.remove("active");
     openMenuSkill.classList.remove("active");
+}
+
+openMenu.addEventListener("click", () => {
+    if (sideMenu.classList.contains("active")) {
+        hideSidebar();
+    } else {
+        showSidebar();
+    }
+})
+
+pageContent.addEventListener("click", (event) => {
+    if (!sideMenu.contains(event.target) && !openMenu.contains(event.target)) {
+        hideSidebar();
+    }
 })

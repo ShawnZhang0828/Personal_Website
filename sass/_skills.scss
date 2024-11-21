@@ -5,63 +5,43 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    color:  $font-black;
+    color: $font-black;
 }
 
 #skillset-container {
     margin-left: 10%;
     margin-right: 10%;
     z-index: 0;
+}
 
-    ul {   
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
+.skills-category {
+    margin-bottom: 2rem;
+}
 
-    ul div {
-        position: relative;
-        min-width: 30px;
-        width: 20em;
-        margin-bottom: 1em;
-        margin-right: 2em;
-        background-color: #d8f5f5;
-        border-radius: 5px;
-        transition: 500ms;
+.skills-category h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: $font-black;
+}
 
-        .skill-bar {
-            display: block;
-            border-radius: 5px;
-            height: 25px;
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
 
-            &.python { width: 80%; background-color: #1a5050; }
-            &.java { width: 65%; background-color: #1a5050; }
-            &.c { width: 60%; background-color: #1a5050; }
-            &.js { width: 55%; background-color: #1a5050; }
-            &.html { width: 55%; background-color: #1a5050; }
-            &.matlab { width: 50%; background-color: #1a5050; }
-        }
+.skill-item {
+    background-color: #eaf7f7;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: transform 300ms;
+}
 
-        .skill-text {
-            position: absolute;
-            top: 2px;
-            left: 10px;
-            color:white;
-        }
-
-        .skill-percentage {
-            position: absolute;
-            top: 2px;
-            right: 10px;
-            color: $font-black;
-        }
-    }
-
-    ul div:hover {
-        transform: scale(1.1);
-    }
-    
+.skill-item:hover {
+    transform: scale(1.05);
 }
 
 #skillset-container.active {
