@@ -1,0 +1,41 @@
+#self-intro {
+    margin-top: 4rem;
+    padding-left: 3%;
+    padding-right: 3%;
+    color:  $font-black;
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+        margin-bottom: 1.4rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+        margin-left: 10%;
+        margin-right: 10%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    font-size: 1.2rem;
+}
+
+#self-intro.active {
+    padding-left: calc(70px + 10vw);
+    transition: 400ms;
+    margin-left: 2rem;
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+    }
+
+    p {
+        display: flex;
+        justify-content: center;
+    }
+}

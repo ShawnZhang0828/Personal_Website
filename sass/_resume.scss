@@ -1,0 +1,25 @@
+#resume-container {
+    padding-top: 4rem;
+    text-align: center;
+    font-size: 2rem;
+    color:  $font-black;
+    width: 100vw;
+
+    img {
+        margin-top: 1rem;
+        height: auto;
+        width: 50vw;
+        border-radius: 1rem;
+        border: 1px solid $font-black;
+        transition: 400ms;
+    }
+
+    img:hover {
+        transform: scale(1.02);
+    }
+}
+
+#resume-container.active {
+    padding-left: calc(70px + 10vw);
+    transition: 400ms;
+}
