@@ -65,32 +65,75 @@ body {
 }
 
 #nav-menu {
-    background-color: var(--sidebar-bg);
+    background-color: rgba(248, 249, 250, 0.95);
+}
+
+[data-theme="dark"] #nav-menu {
+    background-color: rgba(22, 33, 62, 0.95);
+}
+
+.nav-text {
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-text:hover {
+    background-color: rgba(74, 144, 226, 0.2);
+    color: #4a90e2;
+}
+
+[data-theme="dark"] .nav-text {
+    color: #eaeaea;
+    background-color: rgba(15, 52, 96, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .nav-text:hover {
+    background-color: rgba(233, 69, 96, 0.2);
+    color: #e94560;
 }
 
 .container {
-    background-color: var(--bg-primary);
+    background-color: transparent;
 }
 
 #self-intro {
-    background-color: var(--bg-card);
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
     border-radius: 12px;
     padding: 2rem;
-    box-shadow: 0 4px 6px var(--shadow-color);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+[data-theme="dark"] #self-intro {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    padding: 1rem 0;
+    justify-content: center;
 }
 
 .skill-item {
-    background-color: var(--bg-card);
+    background-color: transparent;
     color: var(--text-primary);
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--accent-color);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
     transition: all 0.3s ease;
+    cursor: default;
 }
 
 .skill-item:hover {
     background-color: var(--accent-color);
     color: white;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px var(--shadow-color);
 }
 
 .project {
@@ -110,9 +153,16 @@ body {
     border: 2px solid var(--accent-color);
 }
 
+.project p {
+    line-height: 1.6;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
 .project-links a {
     color: var(--accent-color);
     text-decoration: none;
+    font-weight: 500;
     transition: color 0.3s ease;
 }
 
