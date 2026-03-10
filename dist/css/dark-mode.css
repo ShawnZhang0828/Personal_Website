@@ -194,12 +194,22 @@ body {
 /* Prevent text alignment change when sidebar opens */
 #intro-container {
     text-align: left !important;
+    display: block !important;
 }
 
 #self-intro {
     text-align: left !important;
     margin-left: 0 !important;
     margin-right: auto !important;
+    width: 100% !important;
+}
+
+#self-intro h2 {
+    text-align: left !important;
+}
+
+#self-intro p {
+    text-align: left !important;
 }
 
 #self-intro {
@@ -246,6 +256,8 @@ body {
     overflow: hidden;
     box-shadow: 0 4px 6px var(--shadow-color);
     transition: all 0.3s ease;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
 }
 
 .project:hover {
@@ -253,14 +265,22 @@ body {
     box-shadow: 0 12px 24px var(--shadow-color);
 }
 
-.project.featured {
-    border: 2px solid var(--accent-color);
+.project h3 {
+    text-align: left;
+    margin-bottom: 1rem;
 }
 
 .project p {
     line-height: 1.6;
     color: var(--text-secondary);
     font-size: 0.95rem;
+    text-align: left;
+    margin: 1rem 0;
+}
+
+.project-links {
+    margin-top: 1rem;
+    text-align: left;
 }
 
 .project-links a {
@@ -272,6 +292,15 @@ body {
 
 .project-links a:hover {
     color: var(--accent-hover);
+}
+
+/* Project images - maintain aspect ratio */
+.proj-img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
 }
 
 #email-link {
