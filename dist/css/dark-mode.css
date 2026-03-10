@@ -56,6 +56,34 @@
     color: #f1f5f9 !important;
 }
 
+/* Dark mode navbar links */
+[data-theme="dark"] #other-nav a {
+    color: #ffffff !important;
+}
+
+[data-theme="dark"] #other-nav a:hover {
+    color: #f43f5e !important;
+}
+
+/* Dark mode contact icons */
+[data-theme="dark"] #other-contacts a {
+    color: #ffffff !important;
+}
+
+[data-theme="dark"] #other-contacts a:hover {
+    color: #f43f5e !important;
+}
+
+/* Dark mode self intro text */
+[data-theme="dark"] #self-intro p {
+    color: #f1f5f9 !important;
+}
+
+/* Dark mode email link */
+[data-theme="dark"] #email-link {
+    color: #f43f5e !important;
+}
+
 /* Smooth transition for theme switching */
 * {
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
@@ -142,17 +170,21 @@ body {
 }
 
 [data-theme="dark"] .nav-text {
-    color: #ffffff !important;
-    background: linear-gradient(135deg, #3d4e5f 0%, #2a3542 100%) !important;
-    border: 1px solid rgba(244, 63, 94, 0.5) !important;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+    color: #e2e8f0 !important;
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%) !important;
+    border: 1px solid rgba(148, 163, 184, 0.3) !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4) !important;
 }
 
 [data-theme="dark"] .nav-text:hover {
-    background: linear-gradient(135deg, #f43f5e 0%, #e11d48 100%) !important;
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%) !important;
     color: white !important;
-    border-color: #f43f5e !important;
-    box-shadow: 0 4px 12px rgba(244, 63, 94, 0.4) !important;
+    border-color: #3b82f6 !important;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4) !important;
+}
+
+[data-theme="dark"] #nav-menu {
+    background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%) !important;
 }
 
 .container {
