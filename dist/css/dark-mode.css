@@ -1,3 +1,11 @@
+/* Import Nunito font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+/* Apply Nunito font globally */
+body, h1, h2, h3, h4, h5, h6, p, a, li, button, input, textarea {
+    font-family: 'Nunito', sans-serif !important;
+}
+
 /* Dark Mode Styles */
 
 /* CSS Variables for theming */
@@ -46,7 +54,8 @@
 [data-theme="dark"] h2,
 [data-theme="dark"] #skill-title,
 [data-theme="dark"] #project-title,
-[data-theme="dark"] .skills-category h3 {
+[data-theme="dark"] .skills-category h3,
+[data-theme="dark"] .project h3 {
     color: #ffffff !important;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
