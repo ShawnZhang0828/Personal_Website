@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="dist/css/style.min.css" />
+        <link rel="stylesheet" href="dist/css/dark-mode.css" />
         <link
             rel="stylesheet"
             href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -12,6 +13,7 @@
             crossorigin="anonymous"
         />
         <script src="js/main.js" type="module"></script>
+        <script src="js/dark-mode.js" defer></script>
         <title>Xiang Zhang</title>
     </head>
     <body>
@@ -51,6 +53,11 @@
                                 style="text-decoration: none"
                                 >Contact</a
                             >
+                        </li>
+                        <li>
+                            <button id="theme-toggle" aria-label="Toggle dark mode">
+                                <i class="fas fa-moon"></i>
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -130,20 +137,23 @@
             <article id="self-intro">
                 <h2>About me</h2>
                 <p>
-                    Welcome to my personal website! I'm a 5th year Software
-                    Engineering student in McMaster University who loves
-                    building creative tech solutions, from AI-powered language
-                    tools to optimized web experiences. Always up for a
-                    challenge, and just trying to make tech a little more
-                    interesting.
+                    Welcome to my personal website! I'm a MASc student in Software
+                    Engineering at McMaster University, focusing on Markov Chain Aggregation
+                    and optimization algorithms. My research explores using KL divergence
+                    rate as an objective function with Lagrangian optimization techniques.
                 </p>
                 <p>
-                    Apart from coding and schoolwork, I love badminton,
-                    basketball, swimming, and playing guitar.
+                    I love building creative tech solutions, from AI-powered language
+                    tools to automated workflows. Currently working with Zoho APIs and
+                    n8n to streamline business processes. Always up for a challenge,
+                    and just trying to make tech a little more interesting.
                 </p>
                 <p>
-                    Thanks for stopping by! And always feel free to get in touch
-                    : )
+                    Apart from coding and research, I love badminton, basketball,
+                    swimming, and playing guitar.
+                </p>
+                <p>
+                    Thanks for stopping by! And always feel free to get in touch : )
                 </p>
             </article>
         </div>
@@ -177,13 +187,16 @@
                 </div>
             </div>
             <div class="skills-category">
-                <h3>Tools</h3>
+                <h3>Tools & Automation</h3>
                 <div class="skills-grid">
                     <div class="skill-item">Git</div>
                     <div class="skill-item">Azure DevOps</div>
                     <div class="skill-item">MongoDB</div>
                     <div class="skill-item">Flutter</div>
                     <div class="skill-item">LaTeX</div>
+                    <div class="skill-item">n8n</div>
+                    <div class="skill-item">Webhook</div>
+                    <div class="skill-item">API Design</div>
                 </div>
             </div>
         </div>
@@ -191,6 +204,30 @@
         <div class="container" id="project-container">
             <h2 id="project-title">Projects</h2>
             <ul id="project-list">
+                <li>
+                    <div class="project featured">
+                        <h3>Smart Translation Glasses</h3>
+                        <a href="https://github.com/wenyuWyin/smart-translation-glasses" target="_blank">
+                            <img
+                                class="proj-img"
+                                src="data/project_img/smart_glasses.png"
+                                alt="Smart Translation Glasses"
+                            />
+                        </a>
+                        <p>
+                            <strong>2024 TRON Capstone Project</strong> — A pair of smart glasses 
+                            equipped with a camera for real-time language translation. Integrated 
+                            mechanical design, electrical circuits (microcontroller + camera + battery), 
+                            and a mobile app with AI-powered OCR translation. Bridging language barriers 
+                            through wearable technology.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/wenyuWyin/smart-translation-glasses" target="_blank">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </li>
                 <li>
                     <div class="project">
                         <h3>To-Do List Manager</h3>

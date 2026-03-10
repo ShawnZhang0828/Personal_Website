@@ -1,0 +1,170 @@
+/* Dark Mode Styles */
+
+/* CSS Variables for theming */
+:root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f5f5f5;
+    --bg-card: #ffffff;
+    --text-primary: #333333;
+    --text-secondary: #666666;
+    --text-muted: #999999;
+    --accent-color: #4a90e2;
+    --accent-hover: #357abd;
+    --border-color: #e0e0e0;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --navbar-bg: rgba(255, 255, 255, 0.95);
+    --sidebar-bg: #f8f9fa;
+}
+
+/* Dark mode variables */
+[data-theme="dark"] {
+    --bg-primary: #1a1a2e;
+    --bg-secondary: #16213e;
+    --bg-card: #0f3460;
+    --text-primary: #eaeaea;
+    --text-secondary: #b8b8b8;
+    --text-muted: #888888;
+    --accent-color: #e94560;
+    --accent-hover: #ff6b6b;
+    --border-color: #2d3748;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --navbar-bg: rgba(26, 26, 46, 0.95);
+    --sidebar-bg: #16213e;
+}
+
+/* Smooth transition for theme switching */
+* {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Theme toggle button */
+#theme-toggle {
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+#theme-toggle:hover {
+    background-color: var(--bg-secondary);
+    transform: scale(1.1);
+}
+
+/* Apply variables to existing elements */
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+#navbar {
+    background-color: var(--navbar-bg);
+}
+
+#nav-menu {
+    background-color: var(--sidebar-bg);
+}
+
+.container {
+    background-color: var(--bg-primary);
+}
+
+#self-intro {
+    background-color: var(--bg-card);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+.skill-item {
+    background-color: var(--bg-card);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+    background-color: var(--accent-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+.project {
+    background-color: var(--bg-card);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    transition: all 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px var(--shadow-color);
+}
+
+.project.featured {
+    border: 2px solid var(--accent-color);
+}
+
+.project-links a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project-links a:hover {
+    color: var(--accent-hover);
+}
+
+#email-link {
+    color: var(--accent-color);
+}
+
+#other-contacts a {
+    color: var(--text-secondary);
+    transition: color 0.3s ease;
+}
+
+#other-contacts a:hover {
+    color: var(--accent-color);
+}
+
+/* Scroll animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Skills progress bars */
+.skill-level {
+    background-color: var(--bg-secondary);
+    border-radius: 10px;
+    height: 8px;
+    margin-top: 0.5rem;
+    overflow: hidden;
+}
+
+.skill-progress {
+    background: linear-gradient(90deg, var(--accent-color), var(--accent-hover));
+    height: 100%;
+    border-radius: 10px;
+    transition: width 1s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #theme-toggle {
+        font-size: 1rem;
+        padding: 0.4rem;
+    }
+}
